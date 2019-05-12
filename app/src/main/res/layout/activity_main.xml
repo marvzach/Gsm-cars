@@ -1,0 +1,88 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/background" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/appNameTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:fontFamily="@font/aladin"-->
+        <!--android:text="Cars Arena"-->
+        <!--android:textColor="#FFEB3B"-->
+        <!--android:textSize="65sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/appNameTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:fontFamily="@font/bad_script"-->
+        <!--android:text="Please Input The details of the car"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textSize="32sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/modelInput"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="220dp"-->
+        <!--android:fontFamily="@font/bad_script"-->
+        <!--android:hint="Enter Car Model "-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textColorHint="#FFF"-->
+        <!--android:textSize="25sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/yearInput"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="320dp"-->
+        <!--android:fontFamily="@font/bad_script"-->
+        <!--android:hint="Enter Car Year"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textColorHint="#FFEB3B"-->
+        <!--android:textSize="25sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/typeInput"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="420dp"-->
+        <!--android:fontFamily="@font/bad_script"-->
+        <!--android:hint="Enter Car Type"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:textColorHint="#FFF"-->
+        <!--android:textSize="25sp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/findbutton"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="706dp"-->
+        <!--android:background="#CDDC39"-->
+        <!--android:text="Search for Cars"-->
+        <!--android:textColor="#fff" />-->
+
+
+<!--</RelativeLayout>-->
