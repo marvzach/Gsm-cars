@@ -28,23 +28,23 @@ public class MainActivity extends AppCompatActivity {
 
         Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "fonts/font1.ttf");
 
-//        mFindcarsButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                String model = mmodel.getText().toString();
-//                String year = myear.getText().toString();
-//                String type = mtype.getText().toString();
-//                Toast.makeText(MainActivity.this , "searching .." ,Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent(MainActivity.this , CarsActivity.class);
-//                intent.putExtra("model", model);
-//                intent.putExtra("year", year);
-//                intent.putExtra("type", type);
-//
-//                startActivity(intent);
-//
-//            }
-//        });
-//    }
-//
-//}
+        mFindcarsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String model = mmodel.getText().toString();
+                String year = myear.getText().toString();
+                String type = mtype.getText().toString();
+                Toast.makeText(MainActivity.this , "searching .." ,Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this , CarsActivity.class);
+                intent.putExtra("model", model);
+                intent.putExtra("year", year);
+                intent.putExtra("type", type);
+
+                startActivity(intent);
+
+            }
+        });
+    }
+
+}
