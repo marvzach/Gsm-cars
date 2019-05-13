@@ -3,7 +3,11 @@ This is an Android app that helps in retrieving detailed car and truck informati
 
 #### Author
 Marvin Zachary
-
+#### Requirements
+1.SDk
+2.JDK.
+3.Android Studio
+4.Gradle
 ## Description
 
 This is an Android app that helps in retrieving detailed car and truck information, including year, make, model, trim, and specifications and allows for comparison of cars
@@ -20,7 +24,9 @@ This is an Android app that helps in retrieving detailed car and truck informati
 This application was written using Java programming language.
 
     1. Java.
-    2. Android.
+    2. Android studio.
+    3. XML.
+    4. Gradle.
 
 ## Support and contact details
     • In case of any questions or feedback or clarifications, you can reach me at: acerzach@gmail.com
