@@ -38,41 +38,41 @@
         android:textColor="#FFF"
         android:textSize="32sp" />
 
-    <!--<EditText-->
-        <!--android:id="@+id/modelInput"-->
-        <!--android:layout_width="220dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="100dp"-->
-        <!--android:layout_marginTop="220dp"-->
-        <!--android:fontFamily="@font/bad_script"-->
-        <!--android:hint="Enter Car Model "-->
-        <!--android:textColor="#FFF"-->
-        <!--android:textColorHint="#FFF"-->
-        <!--android:textSize="25sp" />-->
+    <EditText
+        android:id="@+id/modelInput"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/bad_script"
+        android:hint="Enter Car Model "
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="25sp" />
 
-    <!--<EditText-->
-        <!--android:id="@+id/yearInput"-->
-        <!--android:layout_width="220dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="100dp"-->
-        <!--android:layout_marginTop="320dp"-->
-        <!--android:fontFamily="@font/bad_script"-->
-        <!--android:hint="Enter Car Year"-->
-        <!--android:textColor="#FFF"-->
-        <!--android:textColorHint="#FFEB3B"-->
-        <!--android:textSize="25sp" />-->
+    <EditText
+        android:id="@+id/yearInput"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/bad_script"
+        android:hint="Enter Car Year"
+        android:textColor="#FFF"
+        android:textColorHint="#FFEB3B"
+        android:textSize="25sp" />
 
-    <!--<EditText-->
-        <!--android:id="@+id/typeInput"-->
-        <!--android:layout_width="220dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="100dp"-->
-        <!--android:layout_marginTop="420dp"-->
-        <!--android:fontFamily="@font/bad_script"-->
-        <!--android:hint="Enter Car Type"-->
-        <!--android:textColor="#FFF"-->
-        <!--android:textColorHint="#FFF"-->
-        <!--android:textSize="25sp" />-->
+    <EditText
+        android:id="@+id/typeInput"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/bad_script"
+        android:hint="Enter Car Type"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="25sp" />
 
     <!--<Button-->
         <!--android:id="@+id/findbutton"-->
