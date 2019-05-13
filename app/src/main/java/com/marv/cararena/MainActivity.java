@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
   @BindView(R.id.yearInput) EditText myear;
   @BindView(R.id.typeInput) EditText mtype;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//        ButterKnife.bind(this);
-//
-//        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "fonts/font1.ttf");
-//
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "fonts/font1.ttf");
+
 //        mFindcarsButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
