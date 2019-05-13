@@ -24,26 +24,26 @@ public class CarsActivity extends AppCompatActivity {
     @BindView(R.id.yearDisplay) TextView myear;
     @BindView(R.id.listView) ListView mListView;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_carsarena);
-//        ButterKnife.bind(this);
-//        cararenaAdapter adapter = new cararenaAdapter(this, android.R.layout.simple_list_item_1, cars, price);
-//        mListView.setAdapter(adapter);
-//
-//        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                String car = ((TextView)view).getText().toString();
-//                Toast.makeText(CarsActivity.this, car, Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//
-//        Intent intent = getIntent();
-//        String model = intent.getStringExtra("model");
-//        String year = intent.getStringExtra("year");
-//        String type = intent.getStringExtra("type");
-//        mmodel.setText("List of cars found: " +  " Made in:" + year +" Model:" +  model + " Car Type:" + type );
-//    }
-//}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_carsarena);
+        ButterKnife.bind(this);
+        cararenaAdapter adapter = new cararenaAdapter(this, android.R.layout.simple_list_item_1, cars, price);
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String car = ((TextView)view).getText().toString();
+                Toast.makeText(CarsActivity.this, car, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Intent intent = getIntent();
+        String model = intent.getStringExtra("model");
+        String year = intent.getStringExtra("year");
+        String type = intent.getStringExtra("type");
+        mmodel.setText("List of cars found: " +  " Made in:" + year +" Model:" +  model + " Car Type:" + type );
+    }
+}
