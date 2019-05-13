@@ -24,7 +24,6 @@ public class SplashScreen extends Activity {
                     }
                 },1200);
 
-//        MediaPlayer mediaPlayer= MediaPlayer.create(SplashScreen.this,R.raw.song);
-//        mediaPlayer.start();
+
     }
 }

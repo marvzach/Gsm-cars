@@ -1,25 +1,25 @@
-//package com.marv.cararena;
-//
-//import android.content.Intent;
-//import android.graphics.Typeface;
-//import android.support.v7.app.AppCompatActivity;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.widget.Button;
-//import android.widget.EditText;
-//import android.widget.TextView;
-//import android.widget.Toast;
-//
-//import butterknife.BindView;
-//import butterknife.ButterKnife;
-//
-//public class MainActivity extends AppCompatActivity {
-//  @BindView(R.id.findbutton) Button mFindcarsButton;
-//  @BindView(R.id.appNameTextView) TextView mAppNameTextView;
-//  @BindView(R.id.modelInput) EditText mmodel;
-//  @BindView(R.id.yearInput) EditText myear;
-//  @BindView(R.id.typeInput) EditText mtype;
-//
+package com.marv.cararena;
+
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity {
+  @BindView(R.id.findbutton) Button mFindcarsButton;
+  @BindView(R.id.appNameTextView) TextView mAppNameTextView;
+  @BindView(R.id.modelInput) EditText mmodel;
+  @BindView(R.id.yearInput) EditText myear;
+  @BindView(R.id.typeInput) EditText mtype;
+
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
