@@ -14,35 +14,35 @@
         android:scaleType="centerCrop"
         android:src="@drawable/cararena" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/modelDisplay"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="10dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:fontFamily="@font/bad_script"-->
-        <!--android:textColor="#FFEB3B"-->
-        <!--android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/modelDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bad_script"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/yearDisplay"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="10dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:fontFamily="@font/aladin"-->
-        <!--android:textColor="@color/colorPrimaryText"-->
-        <!--android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/yearDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/typeDisplay"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="10dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--android:fontFamily="@font/aladin"-->
-        <!--android:textColor="@color/colorPrimaryText"-->
-        <!--android:textSize="20sp" />-->
+    <TextView
+        android:id="@+id/typeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp" />
 <!--<ListView-->
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
