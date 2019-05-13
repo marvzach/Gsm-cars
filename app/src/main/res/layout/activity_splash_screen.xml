@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="600dp"
             android:fontFamily="@font/aladin"
             android:text=" Welcome to Cars Arena"
             android:textColor="#FFEB3B"
@@ -35,11 +35,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="600dp"
+            android:layout_marginTop="650dp"
             android:fontFamily="@font/aladin"
             android:text=" Find your Dream Car Here"
             android:textColor="#FFEB3B"
             android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/logo" />
 
 
 </RelativeLayout>

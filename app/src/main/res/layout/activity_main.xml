@@ -46,8 +46,8 @@
         android:layout_marginTop="220dp"
         android:fontFamily="@font/bad_script"
         android:hint="Enter Car Model "
-        android:textColor="#FFF"
-        android:textColorHint="#FFF"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:textSize="25sp" />
 
     <EditText
@@ -58,8 +58,8 @@
         android:layout_marginTop="320dp"
         android:fontFamily="@font/bad_script"
         android:hint="Enter Car Year"
-        android:textColor="#FFF"
-        android:textColorHint="#FFEB3B"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:textSize="25sp" />
 
     <EditText
@@ -70,8 +70,8 @@
         android:layout_marginTop="420dp"
         android:fontFamily="@font/bad_script"
         android:hint="Enter Car Type"
-        android:textColor="#FFF"
-        android:textColorHint="#FFF"
+        android:textColor="#000"
+        android:textColorHint="#000"
         android:textSize="25sp" />
 
     <Button
