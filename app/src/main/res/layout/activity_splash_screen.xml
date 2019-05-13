@@ -9,19 +9,37 @@
     android:touchscreenBlocksFocus="false"
     tools:context=".SplashScreen">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/car"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
             android:src="@drawable/chevrolet" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/aladin"
+            android:text=" Welcome to Cars Arena"
+            android:textColor="#FFEB3B"
+            android:textSize="35sp" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="600dp"
+            android:fontFamily="@font/aladin"
+            android:text=" Find your Dream Car Here"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp" />
 
 
 </RelativeLayout>
