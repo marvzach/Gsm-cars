@@ -1,43 +1,43 @@
-//package com.marvin.cararena.ui;
-//
-//import android.content.Intent;
-//import android.net.Uri;
-//import android.os.Bundle;
-//
-//import androidx.fragment.app.Fragment;
-//import butterknife.BindView;
-//import butterknife.ButterKnife;
-//
-//import android.view.LayoutInflater;
-//import android.view.View;
-//import android.view.ViewGroup;
-//import android.widget.ImageView;
-//import android.widget.TextView;
-//
-//import com.marvin.cararena.R;
-//import com.marvin.cararena.models.Carzarena;
-//import com.squareup.picasso.Picasso;
-//
-//import org.parceler.Parcels;
-//
-//
-///**
-// * A simple {@link Fragment} subclass.
-// * Activities that contain this fragment must implement the
-// * to handle interaction events.
-// * Use the {@link CararenaDetailFragment#newInstance} factory method to
-// * create an instance of this fragment.
-// */
-//public class CararenaDetailFragment extends Fragment implements View.OnClickListener{
-//    @BindView(R.id.buildImageView) ImageView mImageLabel;
-//    @BindView(R.id.carNameTextView) TextView mNameLabel;
-//    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
-//    @BindView(R.id.priceTextView) TextView mPriceLabel;
-//    @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
-//    @BindView(R.id.phoneTextView) TextView mPhoneLabel;
-//    @BindView(R.id.addressTextView) TextView mAddressLabel;
-//    @BindView(R.id.savecarButton) TextView mSaveCarButton;
-//
+package com.marvin.cararena.ui;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.marvin.cararena.R;
+import com.marvin.cararena.models.Carzarena;
+import com.squareup.picasso.Picasso;
+
+import org.parceler.Parcels;
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Activities that contain this fragment must implement the
+ * to handle interaction events.
+ * Use the {@link CararenaDetailFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class CararenaDetailFragment extends Fragment implements View.OnClickListener{
+    @BindView(R.id.buildImageView) ImageView mImageLabel;
+    @BindView(R.id.carNameTextView) TextView mNameLabel;
+    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
+    @BindView(R.id.priceTextView) TextView mPriceLabel;
+    @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
+    @BindView(R.id.phoneTextView) TextView mPhoneLabel;
+    @BindView(R.id.addressTextView) TextView mAddressLabel;
+    @BindView(R.id.savecarButton) TextView mSaveCarButton;
+
 //    private Carzarena mCarzarena;
 //
 //    public static CararenaDetailFragment newInstance(Carzarena carzarena) {
