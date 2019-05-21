@@ -68,7 +68,7 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
         Picasso.get().load(mCarzarena.getPhoto_links()).into(mImageLabel);
 
         mNameLabel.setText(mCarzarena.getMake());
-//        mCategoriesLabel.setText(mCarzarena.getPhone());
+
         mPriceLabel.setText(mCarzarena.getPrice() + " "+"is the year made");
         mPhoneLabel.setText("Model :" +mCarzarena.getPhone() );
         mEngine.setText("Engine :" +mCarzarena.getEngine() );

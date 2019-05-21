@@ -87,18 +87,7 @@
                 android:paddingTop="20dp"
                 android:paddingRight="30dp">
 
-                <TextView
-                    android:id="@+id/websiteTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:drawableLeft="@drawable/exit"
-                    android:drawablePadding="4dp"
-                    android:gravity="center"
-                    android:text="View on Marketcheck"
-                    android:textColor="@color/colorTextIcons"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/phoneTextView"
@@ -114,18 +103,7 @@
                     android:textStyle="bold" />
 
 
-                <TextView
-                    android:id="@+id/addressTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:drawableLeft="@drawable/exit"
-                    android:drawablePadding="4dp"
-                    android:gravity="center_vertical"
-                    android:text="123 SW Best Ever Ave. Portland, Oregon, 97222"
-                    android:textColor="@color/colorTextIcons"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/Engine"
@@ -151,6 +129,31 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/websiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="View on Marketcheck"
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:text="123 SW Best Ever Ave. Portland, Oregon, 97222"
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
