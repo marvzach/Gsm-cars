@@ -26,9 +26,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "fonts/black_ops_one.ttf");
+        Typeface ostrichFont = Typeface.createFromAsset(getAssets(), "fonts/font1.ttf");
 
-
+//        mFindRestaurantsButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                String location = mlocation.getText().toString();
+//                Toast.makeText(MainActivity.this , "searching .." ,Toast.LENGTH_LONG).show();
+//                Intent intent = new Intent(MainActivity.this , CararenaListActivity.class);
+//                intent.putExtra("location", location);
+//                startActivity(intent);
+//            }
+//        });
         mFindRestaurantsButton.setOnClickListener(this);
     }
 
