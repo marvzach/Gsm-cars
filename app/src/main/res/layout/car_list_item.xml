@@ -19,13 +19,14 @@
         android:padding="10dp">
 
         <TextView
+            android:id="@+id/carNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/carNameTextView"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/black_ops_one"
             android:text="Car Name"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"

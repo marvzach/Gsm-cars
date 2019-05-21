@@ -14,16 +14,16 @@
         android:src="@drawable/background" />
 
     <TextView
+        android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:id="@+id/appNameTextView"
+        android:fontFamily="@font/black_ops_one"
         android:text="Car Arena"
-        android:textColor="@color/colorAccent"
-        android:textSize="60sp"
-        />
+        android:textColor="#FF6D00"
+        android:textSize="60sp" />
     <!--<TextView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
@@ -40,29 +40,29 @@
         android:layout_marginLeft="50dp"
         android:src="@drawable/background"/>
 
-    <EditText
+    <TextView
         android:id="@+id/locationInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="375dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/black_ops_one"
+        android:hint="Find your dream Car here by clicking button below "
         android:textColor="#ffff"
-        android:hint="Search for Make, model or year of a car "
-        android:textColorHint="@color/colorAccent"
-        android:textSize="25sp"
-        />
+        android:textColorHint="#FF6D00"
+        android:textSize="30sp" />
 
     <Button
+        android:id="@+id/findbutton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Search for Cars"
-        android:id="@+id/findbutton"
-        android:layout_marginTop="526dp"
-        android:background="#CDDC39"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="#FF6D00"
+        android:fontFamily="@font/black_ops_one"
 
-        android:textColor="#fff"
-        />
+        android:text="Search for Cars"
+        android:textColor="#fff" />
 
     <EditText
         android:id="@+id/editText"
@@ -74,13 +74,6 @@
         android:visibility="invisible" />
 
 
-    <!--<RatingBar-->
-        <!--android:id="@+id/ratingBar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="70dp"-->
-        <!--android:layout_marginTop="200dp"-->
-        <!--android:background="#3456"-->
-        <!--/>-->
+
 
 </RelativeLayout>
