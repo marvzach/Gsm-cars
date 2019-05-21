@@ -44,8 +44,8 @@ public class MarketCheckService {
             if (response.isSuccessful()){
                 for (int i = 0; i < listingsJSON.length(); i++){
                     JSONObject cararenaJSON = listingsJSON.getJSONObject(i);
-//                    String make = cararenaJSON.getJSONObject("build").getString("make");
-//                    String model = cararenaJSON.getJSONObject("build").getString("model");
+                    String make = cararenaJSON.getJSONObject("build").getString("make");
+                    String model = cararenaJSON.getJSONObject("build").getString("model");
 //                    String website = cararenaJSON.getJSONObject("dealer").getString("website");
 //                    String year = cararenaJSON.getJSONObject("build").getString("year");
 //                    String photo_links = cararenaJSON.getJSONObject("media").getString("photo_links");
