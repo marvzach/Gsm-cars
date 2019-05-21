@@ -37,13 +37,13 @@ public class MarketCheckService {
     public ArrayList<Carzarena> processResults(Response response){
         ArrayList<Carzarena> carzarenas = new ArrayList<>();
 
-//        try{
-//            String jsonData = response.body().string();
-//            JSONObject carJSON = new JSONObject(jsonData);
-//            JSONArray listingsJSON = carJSON.getJSONArray("listings");
-//            if (response.isSuccessful()){
-//                for (int i = 0; i < listingsJSON.length(); i++){
-//                    JSONObject cararenaJSON = listingsJSON.getJSONObject(i);
+        try{
+            String jsonData = response.body().string();
+            JSONObject carJSON = new JSONObject(jsonData);
+            JSONArray listingsJSON = carJSON.getJSONArray("listings");
+            if (response.isSuccessful()){
+                for (int i = 0; i < listingsJSON.length(); i++){
+                    JSONObject cararenaJSON = listingsJSON.getJSONObject(i);
 //                    String make = cararenaJSON.getJSONObject("build").getString("make");
 //                    String model = cararenaJSON.getJSONObject("build").getString("model");
 //                    String website = cararenaJSON.getJSONObject("dealer").getString("website");
