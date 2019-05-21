@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/design_default_color_error"
+        android:fontFamily="@font/black_ops_one"
         android:orientation="vertical">
 
         <ImageView
@@ -23,6 +24,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:fontFamily="@font/black_ops_one"
             android:scaleType="centerCrop"
             android:src="@drawable/icon" />
 
@@ -31,6 +33,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:paddingLeft="10dp"
+            android:fontFamily="@font/black_ops_one"
             android:paddingTop="20dp"
             android:paddingRight="10dp"
             android:paddingBottom="20dp">
@@ -48,12 +51,12 @@
                 android:textStyle="bold" />
 
 
-
             <TextView
                 android:id="@+id/priceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/carNameTextView"
+                android:fontFamily="@font/black_ops_one"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:text=""
@@ -167,10 +170,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="@color/colorAccent"
+                android:background="#F6F7F8"
                 android:fontFamily="@font/black_ops_one"
                 android:text="Save Car"
-                android:textColor="@color/colorTextIcons"
+                android:textColor="#0F0F0F"
                 android:textSize="15sp" />
         </RelativeLayout>
     </LinearLayout>
