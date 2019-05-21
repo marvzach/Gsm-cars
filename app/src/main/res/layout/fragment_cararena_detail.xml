@@ -47,16 +47,6 @@
                 android:textStyle="bold" />
 
 
-            <TextView
-                android:id="@+id/engine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/carNameTextView"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="20000$"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/priceTextView"
@@ -115,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:drawableLeft="@drawable/call"
+                    android:drawableLeft="@drawable/exit"
                     android:drawablePadding="4dp"
                     android:gravity="center_vertical"
                     android:text="(503) 223-1282"
@@ -128,8 +118,8 @@
                     android:id="@+id/addressTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:drawableLeft="@drawable/loc"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@drawable/exit"
                     android:drawablePadding="4dp"
                     android:gravity="center_vertical"
                     android:text="123 SW Best Ever Ave. Portland, Oregon, 97222"
@@ -137,7 +127,30 @@
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
-
+                <TextView
+                    android:id="@+id/Engine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+                <TextView
+                    android:id="@+id/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/exit"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTextIcons"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="TextView" />
 
             </LinearLayout>
 

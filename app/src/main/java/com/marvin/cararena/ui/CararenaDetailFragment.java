@@ -36,7 +36,9 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
     @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
     @BindView(R.id.phoneTextView) TextView mPhoneLabel;
     @BindView(R.id.addressTextView) TextView mAddressLabel;
-    @BindView(R.id.engine) TextView mEngineLabel;
+    @BindView(R.id.Engine) TextView mEngine;
+    @BindView(R.id.Body) TextView mBody;
+    @BindView(R.id.categoryTextView) TextView mVH;
     @BindView(R.id.savecarButton) TextView mSaveCarButton;
 
     private Carzarena mCarzarena;
@@ -68,7 +70,11 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
         mNameLabel.setText(mCarzarena.getMake());
 //        mCategoriesLabel.setText(mCarzarena.getPhone());
         mPriceLabel.setText(mCarzarena.getPrice() + " "+"is the year made");
-        mPhoneLabel.setText("Model:" +mCarzarena.getPhone() );
+        mPhoneLabel.setText("Model :" +mCarzarena.getPhone() );
+        mEngine.setText("Engine :" +mCarzarena.getEngine() );
+        mBody.setText("Body type :" +mCarzarena.getBody_type() );
+        mWebsiteLabel.setText("Website :" +mCarzarena.getWebsite() );
+        mVH.setText("The Vehicle type is  :" +mCarzarena.getVehicle_type() );
         mAddressLabel.setText(mCarzarena.getMade_in()+ "(" + mCarzarena.getLongitude() +"," + mCarzarena.getLatitude()+ ") is the Location made.");
 
         return view;
