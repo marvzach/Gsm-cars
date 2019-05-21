@@ -38,60 +38,60 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
     @BindView(R.id.addressTextView) TextView mAddressLabel;
     @BindView(R.id.savecarButton) TextView mSaveCarButton;
 
-//    private Carzarena mCarzarena;
-//
-//    public static CararenaDetailFragment newInstance(Carzarena carzarena) {
-//        CararenaDetailFragment cararenaDetailFragment = new CararenaDetailFragment();
-//        Bundle args = new Bundle();
-//        args.putParcelable("carzarena", Parcels.wrap(carzarena));
-//        cararenaDetailFragment.setArguments(args);
-//        return cararenaDetailFragment;
-//    }
-//
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        mCarzarena = Parcels.unwrap(getArguments().getParcelable("carzarena"));
-//    }
-//
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_cararena_detail, container, false);
-//        ButterKnife.bind(this, view);
-//        mWebsiteLabel.setOnClickListener(this);
-//        mPhoneLabel.setOnClickListener(this);
-//        mAddressLabel.setOnClickListener(this);
-//        Picasso.get().load(mCarzarena.getPhoto_links()).into(mImageLabel);
-//
-//        mNameLabel.setText(mCarzarena.getMake());
-////        mCategoriesLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getDealer()));
-//        mPriceLabel.setText(mCarzarena.getPrice() + " "+"is the year made");
-//        mPhoneLabel.setText(mCarzarena.getPhone());
-////        mAddressLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getBuild()));
-//
-//        return view;
-//    }
-////implicit intents//
-//    @Override
-//    public void onClick(View v) {
-//        if (v == mWebsiteLabel) {
-//            Intent webIntent = new Intent(Intent.ACTION_VIEW,
-//                    Uri.parse(mCarzarena.getWebsite()));
-//            startActivity(webIntent);
-//        }
-//
-//        if (v == mAddressLabel) {
-//            Intent mapIntent = new Intent(Intent.ACTION_VIEW,
-//                    Uri.parse("geo:" + mCarzarena.getLatitude()
-//                            + "," + mCarzarena.getLongitude()
-//                            + "?q=(" + mCarzarena.getMake() + ")"));
-//            startActivity(mapIntent);
-//        }
-//        if (v == mPhoneLabel) {
-//            Intent mapIntent = new Intent(Intent.ACTION_VIEW,
-//                    Uri.parse("tel:" + mCarzarena.getPhone()));
-//            startActivity(mapIntent);
-//        }
-//    }
-//}
+    private Carzarena mCarzarena;
+
+    public static CararenaDetailFragment newInstance(Carzarena carzarena) {
+        CararenaDetailFragment cararenaDetailFragment = new CararenaDetailFragment();
+        Bundle args = new Bundle();
+        args.putParcelable("carzarena", Parcels.wrap(carzarena));
+        cararenaDetailFragment.setArguments(args);
+        return cararenaDetailFragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mCarzarena = Parcels.unwrap(getArguments().getParcelable("carzarena"));
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_cararena_detail, container, false);
+        ButterKnife.bind(this, view);
+        mWebsiteLabel.setOnClickListener(this);
+        mPhoneLabel.setOnClickListener(this);
+        mAddressLabel.setOnClickListener(this);
+        Picasso.get().load(mCarzarena.getPhoto_links()).into(mImageLabel);
+
+        mNameLabel.setText(mCarzarena.getMake());
+//        mCategoriesLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getDealer()));
+        mPriceLabel.setText(mCarzarena.getPrice() + " "+"is the year made");
+        mPhoneLabel.setText(mCarzarena.getPhone());
+//        mAddressLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getBuild()));
+
+        return view;
+    }
+//implicit intents//
+    @Override
+    public void onClick(View v) {
+        if (v == mWebsiteLabel) {
+            Intent webIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(mCarzarena.getWebsite()));
+            startActivity(webIntent);
+        }
+
+        if (v == mAddressLabel) {
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("geo:" + mCarzarena.getLatitude()
+                            + "," + mCarzarena.getLongitude()
+                            + "?q=(" + mCarzarena.getMake() + ")"));
+            startActivity(mapIntent);
+        }
+        if (v == mPhoneLabel) {
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("tel:" + mCarzarena.getPhone()));
+            startActivity(mapIntent);
+        }
+    }
+}
