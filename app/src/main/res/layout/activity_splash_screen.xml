@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="580dp"
         android:fontFamily="@font/black_ops_one"
         android:text=" Welcome to Cars Arena"
         android:textColor="#FFEB3B"
