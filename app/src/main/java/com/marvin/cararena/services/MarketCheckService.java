@@ -65,12 +65,12 @@ public class MarketCheckService {
                     carzarenas.add(carzarena);
                 }
             }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//        return carzarenas;
-//    }
-//
-//}
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return carzarenas;
+    }
+
+}
