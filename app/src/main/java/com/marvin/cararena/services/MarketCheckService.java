@@ -46,25 +46,25 @@ public class MarketCheckService {
                     JSONObject cararenaJSON = listingsJSON.getJSONObject(i);
                     String make = cararenaJSON.getJSONObject("build").getString("make");
                     String model = cararenaJSON.getJSONObject("build").getString("model");
-//                    String website = cararenaJSON.getJSONObject("dealer").getString("website");
-//                    String year = cararenaJSON.getJSONObject("build").getString("year");
-//                    String photo_links = cararenaJSON.getJSONObject("media").getString("photo_links");
-//
-//
-//
-//                    String latitude = cararenaJSON.getJSONObject("dealer").getString("latitude");
-//                    String longitude = cararenaJSON.getJSONObject("dealer").getString("longitude");
-//                    ArrayList<String> details = new ArrayList<>();
-//                    JSONArray detailsJSON = cararenaJSON.getJSONObject("media").getJSONArray("photo_links");
-//                    for (int y = 0; y < detailsJSON.length(); y++){
-//                        details.add(detailsJSON.get(y).toString());
-//                    }
-//
-//                    Carzarena carzarena = new Carzarena(make, model, website, year,
-//                            photo_links, details, latitude, longitude);
-//                    carzarenas.add(carzarena);
-//                }
-//            }
+                    String website = cararenaJSON.getJSONObject("dealer").getString("website");
+                    String year = cararenaJSON.getJSONObject("build").getString("year");
+                    String photo_links = cararenaJSON.getJSONObject("media").getString("photo_links");
+
+
+
+                    String latitude = cararenaJSON.getJSONObject("dealer").getString("latitude");
+                    String longitude = cararenaJSON.getJSONObject("dealer").getString("longitude");
+                    ArrayList<String> details = new ArrayList<>();
+                    JSONArray detailsJSON = cararenaJSON.getJSONObject("media").getJSONArray("photo_links");
+                    for (int y = 0; y < detailsJSON.length(); y++){
+                        details.add(detailsJSON.get(y).toString());
+                    }
+
+                    Carzarena carzarena = new Carzarena(make, model, website, year,
+                            photo_links, details, latitude, longitude);
+                    carzarenas.add(carzarena);
+                }
+            }
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        } catch (JSONException e) {
