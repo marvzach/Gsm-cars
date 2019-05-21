@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/appNameTextView"
+        android:text="Car Arena"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Enter your car make below"-->
+        <!--android:layout_marginTop="300dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:textSize="30sp"-->
+        <!--/>-->
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/background"/>
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ffff"
+        android:hint="Search for Make, model or year of a car "
+        android:textColorHint="@color/colorAccent"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Search for Cars"
+        android:id="@+id/findbutton"
+        android:layout_marginTop="526dp"
+        android:background="#CDDC39"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="G3iKhJaR0MdQ2s1QTxO8Q3mi0CzsIaEG"
+        android:visibility="invisible" />
+
+
+    <!--<RatingBar-->
+        <!--android:id="@+id/ratingBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:background="#3456"-->
+        <!--/>-->
+
+</RelativeLayout>
