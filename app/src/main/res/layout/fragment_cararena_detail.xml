@@ -18,6 +18,14 @@
             android:scaleType="centerCrop"
             android:src="@drawable/icon" />
 
+        <ImageView
+            android:id="@+id/carzimages"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,6 +46,18 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
+
+            <TextView
+                android:id="@+id/engine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/carNameTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="20000$"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/priceTextView"
                 android:layout_width="wrap_content"
@@ -45,12 +65,12 @@
                 android:layout_alignTop="@+id/carNameTextView"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="4.5/5"
+                android:text=""
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/cuisineTextView"
+                android:id="@+id/categoryTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/carNameTextView"
@@ -97,11 +117,12 @@
                     android:layout_marginBottom="10dp"
                     android:drawableLeft="@drawable/call"
                     android:drawablePadding="4dp"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:text="(503) 223-1282"
                     android:textColor="@color/colorTextIcons"
                     android:textSize="15sp"
                     android:textStyle="bold" />
+
 
                 <TextView
                     android:id="@+id/addressTextView"
@@ -115,6 +136,8 @@
                     android:textColor="@color/colorTextIcons"
                     android:textSize="15sp"
                     android:textStyle="bold" />
+
+
 
             </LinearLayout>
 

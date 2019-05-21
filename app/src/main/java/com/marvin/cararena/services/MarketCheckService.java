@@ -50,7 +50,10 @@ public class MarketCheckService {
                     String year = cararenaJSON.getJSONObject("build").getString("year");
                     String photo_links = cararenaJSON.getJSONObject("media").getString("photo_links");
 
-
+                    String body_type = cararenaJSON.getJSONObject("build").getString("body_type");
+                    String vehicle_type = cararenaJSON.getJSONObject("build").getString("vehicle_type");
+                    String engine = cararenaJSON.getJSONObject("build").getString("engine");
+                    String made_in = cararenaJSON.getJSONObject("build").getString("made_in");
 
                     String latitude = cararenaJSON.getJSONObject("dealer").getString("latitude");
                     String longitude = cararenaJSON.getJSONObject("dealer").getString("longitude");
@@ -61,7 +64,7 @@ public class MarketCheckService {
                     }
 
                     Carzarena carzarena = new Carzarena(make, model, website, year,
-                            photo_links, details, latitude, longitude);
+                            photo_links,body_type,vehicle_type,engine, made_in ,details, latitude, longitude);
                     carzarenas.add(carzarena);
                 }
             }

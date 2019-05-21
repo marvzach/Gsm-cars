@@ -67,7 +67,9 @@ public class CararenaListAdapter extends RecyclerView.Adapter<CararenaListAdapte
         public void bindRestaurant(Carzarena carzarena) {
             Picasso.get().load(carzarena.getPhoto_links()).into(mCararenaImageView);
             mNameTextView.setText(carzarena.getMake());
+            mNameTextView.setText(carzarena.getMake());
             mCategoryTextView.setText(carzarena.getPhone());
+
             mRatingTextView.setText("Year Made: " + carzarena.getPrice() );
         }
 

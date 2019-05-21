@@ -31,11 +31,12 @@ import org.parceler.Parcels;
 public class CararenaDetailFragment extends Fragment implements View.OnClickListener{
     @BindView(R.id.buildImageView) ImageView mImageLabel;
     @BindView(R.id.carNameTextView) TextView mNameLabel;
-    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
+//    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
     @BindView(R.id.priceTextView) TextView mPriceLabel;
     @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
     @BindView(R.id.phoneTextView) TextView mPhoneLabel;
     @BindView(R.id.addressTextView) TextView mAddressLabel;
+    @BindView(R.id.engine) TextView mEngineLabel;
     @BindView(R.id.savecarButton) TextView mSaveCarButton;
 
     private Carzarena mCarzarena;
@@ -65,10 +66,10 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
         Picasso.get().load(mCarzarena.getPhoto_links()).into(mImageLabel);
 
         mNameLabel.setText(mCarzarena.getMake());
-//        mCategoriesLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getDealer()));
+//        mCategoriesLabel.setText(mCarzarena.getPhone());
         mPriceLabel.setText(mCarzarena.getPrice() + " "+"is the year made");
-        mPhoneLabel.setText(mCarzarena.getPhone());
-//        mAddressLabel.setText(android.text.TextUtils.join(", ", mCarzarena.getBuild()));
+        mPhoneLabel.setText("Model:" +mCarzarena.getPhone() );
+        mAddressLabel.setText(mCarzarena.getMade_in()+ "(" + mCarzarena.getLongitude() +"," + mCarzarena.getLatitude()+ ") is the Location made.");
 
         return view;
     }

@@ -11,6 +11,12 @@ public class Carzarena {
     String mWebsite;
     String mPrice;
     String mPhoto_links;
+
+    String mBody_type;
+    String mVehicle_type;
+    String mEngine;
+    String mMade_in;
+
     ArrayList<String> mBuild = new ArrayList<>();
     String mLatitude;
     String mLongitude;
@@ -21,13 +27,21 @@ public class Carzarena {
     }
 
     public Carzarena(String make, String model, String website,
-                     String year, String photo_links, ArrayList<String> build,
+                     String year, String photo_links,
+                     String body_type,String vehicle_type,String engine,
+                     String made_in, ArrayList<String> build,
                      String latitude, String longitude) {
         this.mMake = make;
         this.mPhone = model;
         this.mWebsite = website;
         this.mPrice = year;
         this.mPhoto_links = photo_links;
+
+        this.mBody_type = body_type;
+        this.mVehicle_type = vehicle_type;
+        this.mEngine = engine;
+        this.mMade_in = made_in;
+
         this.mBuild = build;
         this.mLatitude = latitude;
         this.mLongitude = longitude;
@@ -53,6 +67,22 @@ public class Carzarena {
     public String getPhoto_links(){
         return mPhoto_links;
     }
+
+    public String getBody_type(){
+        return mBody_type;
+    }
+
+    public String getEngine(){
+        return mEngine;
+    }
+
+    public String getMade_in(){
+        return mMade_in;
+    }
+    public String getVehicle_type(){
+        return mVehicle_type;
+    }
+
 
     public ArrayList<String> getBuild() {
         return mBuild;
