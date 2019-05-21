@@ -1,39 +1,39 @@
-//package com.marvin.cararena.services;
-//import com.marvin.cararena.Constants;
-//import com.marvin.cararena.models.Carzarena;
-//
-//import org.json.JSONArray;
-//import org.json.JSONException;
-//import org.json.JSONObject;
-//
-//import java.io.IOException;
-//import java.util.ArrayList;
-//
-//import okhttp3.Call;
-//import okhttp3.Callback;
-//import okhttp3.HttpUrl;
-//import okhttp3.OkHttpClient;
-//import okhttp3.Request;
-//import okhttp3.Response;
-//
-//public class MarketCheckService {
-//
-//    public static void findcars(String api_key, Callback callback) {
-//        OkHttpClient client = new OkHttpClient.Builder()
-//                .build();
-//
-//        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.MARKETCHECK_BASE_URL).newBuilder();
-//        urlBuilder.addQueryParameter(Constants.MARKETCHECK_BUILD_QUERY_PARAMETER, api_key);
-//        String url = urlBuilder.build().toString();
-//
-//
-//        Request request = new Request.Builder()
-//                .url(url)
-//                .header("Authorization", Constants.MARKETCHECK_TOKEN)
-//                .build();
-//        Call call = client.newCall(request);
-//        call.enqueue(callback);
-//    }
+package com.marvin.cararena.services;
+import com.marvin.cararena.Constants;
+import com.marvin.cararena.models.Carzarena;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
+public class MarketCheckService {
+
+    public static void findcars(String api_key, Callback callback) {
+        OkHttpClient client = new OkHttpClient.Builder()
+                .build();
+
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.MARKETCHECK_BASE_URL).newBuilder();
+        urlBuilder.addQueryParameter(Constants.MARKETCHECK_BUILD_QUERY_PARAMETER, api_key);
+        String url = urlBuilder.build().toString();
+
+
+        Request request = new Request.Builder()
+                .url(url)
+                .header("Authorization", Constants.MARKETCHECK_TOKEN)
+                .build();
+        Call call = client.newCall(request);
+        call.enqueue(callback);
+    }
 //    public ArrayList<Carzarena> processResults(Response response){
 //        ArrayList<Carzarena> carzarenas = new ArrayList<>();
 //
