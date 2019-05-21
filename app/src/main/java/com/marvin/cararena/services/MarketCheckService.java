@@ -34,9 +34,9 @@ public class MarketCheckService {
         Call call = client.newCall(request);
         call.enqueue(callback);
     }
-//    public ArrayList<Carzarena> processResults(Response response){
-//        ArrayList<Carzarena> carzarenas = new ArrayList<>();
-//
+    public ArrayList<Carzarena> processResults(Response response){
+        ArrayList<Carzarena> carzarenas = new ArrayList<>();
+
 //        try{
 //            String jsonData = response.body().string();
 //            JSONObject carJSON = new JSONObject(jsonData);
