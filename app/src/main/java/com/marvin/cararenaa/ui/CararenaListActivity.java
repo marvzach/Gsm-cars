@@ -1,4 +1,4 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.marvin.cararena.R;
-import com.marvin.cararena.adapters.CararenaListAdapter;
-import com.marvin.cararena.models.Carzarena;
-import com.marvin.cararena.services.MarketCheckService;
+import com.marvin.cararenaa.R;
+import com.marvin.cararenaa.adapters.CararenaListAdapter;
+import com.marvin.cararenaa.models.Carzarena;
+import com.marvin.cararenaa.services.MarketCheckService;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -1,4 +1,4 @@
-package com.marvin.cararena;
+package com.marvin.cararenaa;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;

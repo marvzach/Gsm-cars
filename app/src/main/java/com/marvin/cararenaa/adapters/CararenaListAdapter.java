@@ -1,4 +1,4 @@
-package com.marvin.cararena.adapters;
+package com.marvin.cararenaa.adapters;
 
 import android.content.Context;
 
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.marvin.cararena.R;
-import com.marvin.cararena.models.Carzarena;
-import com.marvin.cararena.ui.CararenaDetailActivity;
+import com.marvin.cararenaa.R;
+import com.marvin.cararenaa.models.Carzarena;
+import com.marvin.cararenaa.ui.CararenaDetailActivity;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;

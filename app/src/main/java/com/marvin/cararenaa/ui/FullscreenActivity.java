@@ -1,4 +1,4 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import android.annotation.SuppressLint;
 import androidx.appcompat.app.ActionBar;
@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.marvin.cararena.R;
+import com.marvin.cararenaa.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

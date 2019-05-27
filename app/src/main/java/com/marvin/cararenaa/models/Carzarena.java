@@ -1,4 +1,4 @@
-package com.marvin.cararena.models;
+package com.marvin.cararenaa.models;
 
 import org.parceler.Parcel;
 
@@ -22,6 +22,8 @@ public class Carzarena {
     String mLongitude;
 
 
+    private String pushId;
+
     public Carzarena() {
 
     }
@@ -30,7 +32,7 @@ public class Carzarena {
                      String year, String photo_links,
                      String body_type,String vehicle_type,String engine,
                      String made_in, ArrayList<String> build,
-                     String latitude, String longitude) {
+                     String latitude,String longitude) {
         this.mMake = make;
         this.mPhone = model;
         this.mWebsite = website;
@@ -45,6 +47,7 @@ public class Carzarena {
         this.mBuild = build;
         this.mLatitude = latitude;
         this.mLongitude = longitude;
+
 
     }
 
@@ -95,6 +98,21 @@ public class Carzarena {
     public String getLongitude() {
         return mLongitude;
     }
+    public String getPushId() {
+        return pushId;
+    }
 
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
+    }
 
 }
+
+
+
+
+
+
+
+
+

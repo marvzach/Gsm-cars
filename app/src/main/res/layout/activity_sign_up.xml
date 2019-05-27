@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.marvin.cararenaa.MainActivity">
+    tools:context="com.marvin.cararenaa.SignUpActivity">
 
 
     <RelativeLayout
@@ -24,7 +24,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="5"
+        android:layout_weight="1"
         android:background="#F3F77D22">
 
         <LinearLayout
@@ -35,28 +35,26 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp">
 
-
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
                 android:fontFamily="@font/black_ops_one"
-                android:hint="Enter your email"
+                android:hint="email"
                 android:inputType="textEmailAddress"
+                android:layout_margin="15dp"
                 android:paddingBottom="15dp"
                 android:textColorHighlight="#00F7F3F3"
                 android:textColorHint="#F6FAFA"
-                android:textColorLink="#00F5F2F2"
-                android:textCursorDrawable="@color/colorPrimaryText" />
+                android:textColorLink="#00F5F2F2" />
 
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
                 android:fontFamily="@font/black_ops_one"
-                android:hint="Enter your  password"
+                android:layout_margin="15dp"
+                android:hint="password"
                 android:inputType="textPassword"
                 android:paddingBottom="15dp"
                 android:textColorHighlight="#00F7F3F3"
@@ -64,31 +62,32 @@
                 android:textColorLink="#00F5F2F2" />
 
             <Button
-                android:id="@+id/buttonLogin"
+                android:id="@+id/buttonSignUp"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:background="@drawable/roundb"
+                android:background="@drawable/rounded_button_transparent"
                 android:fontFamily="@font/black_ops_one"
-                android:text="Login"
+                android:text="Sign Up"
                 android:textAllCaps="false"
-                android:textColor="#FAFAFA"
-                android:textColorHighlight="#00131212"
-                android:textColorLink="#000C0C0C"
-                android:textSize="24sp" />
+                android:textColor="#F8FCFB"
+                android:textColorHighlight="#00F7F3F3"
+                android:textColorLink="#00F5F2F2" />
 
             <TextView
-                android:id="@+id/textViewSignup"
+                android:id="@+id/textViewLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/black_ops_one"
                 android:padding="15dp"
-                android:text="Don't have account? Sign Up"
+                android:text="Already have an account? Login"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                android:textColor="#FCFDFD"
-                android:textSize="24sp" />
+                android:textColor="#F8FCFB"
+                android:textColorHighlight="#00F7F3F3"
+                android:textSize="24sp"
+                android:textColorLink="#00F5F2F2" />
 
 
         </LinearLayout>
@@ -100,6 +99,8 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:visibility="gone" />
+
+
     </RelativeLayout>
 
 

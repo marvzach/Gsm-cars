@@ -1,4 +1,4 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -7,9 +7,9 @@ import butterknife.ButterKnife;
 
 import android.os.Bundle;
 
-import com.marvin.cararena.R;
-import com.marvin.cararena.adapters.CararenaPagerAdapter;
-import com.marvin.cararena.models.Carzarena;
+import com.marvin.cararenaa.R;
+import com.marvin.cararenaa.adapters.CararenaPagerAdapter;
+import com.marvin.cararenaa.models.Carzarena;
 
 import org.parceler.Parcels;
 

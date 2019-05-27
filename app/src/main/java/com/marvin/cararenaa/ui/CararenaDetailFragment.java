@@ -1,4 +1,4 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,11 +11,18 @@ import butterknife.ButterKnife;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.marvin.cararena.R;
-import com.marvin.cararena.models.Carzarena;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.marvin.cararenaa.Authsave;
+import com.marvin.cararenaa.R;
+import com.marvin.cararenaa.models.Carzarena;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
@@ -31,7 +38,7 @@ import org.parceler.Parcels;
 public class CararenaDetailFragment extends Fragment implements View.OnClickListener{
     @BindView(R.id.buildImageView) ImageView mImageLabel;
     @BindView(R.id.carNameTextView) TextView mNameLabel;
-//    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
+    //    @BindView(R.id.cuisineTextView) TextView mCategoriesLabel;
     @BindView(R.id.priceTextView) TextView mPriceLabel;
     @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
     @BindView(R.id.phoneTextView) TextView mPhoneLabel;
@@ -39,7 +46,7 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
     @BindView(R.id.Engine) TextView mEngine;
     @BindView(R.id.Body) TextView mBody;
     @BindView(R.id.categoryTextView) TextView mVH;
-    @BindView(R.id.savecarButton) TextView mSaveCarButton;
+    @BindView(R.id.savecarButton) Button mSaveCarButton;
 
     private Carzarena mCarzarena;
 
@@ -79,7 +86,7 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
 
         return view;
     }
-//implicit intents//
+    //implicit intents//
     @Override
     public void onClick(View v) {
         if (v == mWebsiteLabel) {
@@ -99,6 +106,21 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
             Intent mapIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse("tel:" + mCarzarena.getPhone()));
             startActivity(mapIntent);
+        }
+        if (v == mSaveCarButton) {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String uid = user.getUid();
+            DatabaseReference carRef = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Authsave.FIREBASE_FOUND_CARS)
+                    .child(uid);
+            DatabaseReference pushRef = carRef.push();
+            String pushId = pushRef.getKey();
+            mCarzarena.setPushId(pushId);
+            pushRef.setValue(mCarzarena);
+
+            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
+            mSaveCarButton.setVisibility(View.INVISIBLE);
         }
     }
 }

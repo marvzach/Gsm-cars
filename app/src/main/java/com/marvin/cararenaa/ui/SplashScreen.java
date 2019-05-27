@@ -1,12 +1,14 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
 
-import com.marvin.cararena.R;
+import com.marvin.cararenaa.MainActivity;
+import com.marvin.cararenaa.R;
 
 public class SplashScreen extends Activity {
     AnimationDrawable animation;
@@ -24,9 +26,9 @@ public class SplashScreen extends Activity {
                         startActivity(intent);
                         finish();
                     }
-                },1200);
+                },2200);
 
-//        MediaPlayer mediaPlayer= MediaPlayer.create(SplashScreen.this,R.raw.song);
+//        MediaPlayer mediaPlayer= MediaPlayer.create(SplashScreen.this,R.raw.burnout);
 //        mediaPlayer.start();
     }
 }

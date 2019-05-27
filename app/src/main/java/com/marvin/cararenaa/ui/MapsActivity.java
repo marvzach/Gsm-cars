@@ -1,9 +1,9 @@
-package com.marvin.cararena.ui;
+package com.marvin.cararenaa.ui;
 
 import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
 
-import com.marvin.cararena.R;
+import com.marvin.cararenaa.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

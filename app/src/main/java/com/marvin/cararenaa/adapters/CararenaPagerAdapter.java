@@ -1,7 +1,7 @@
-package com.marvin.cararena.adapters;
+package com.marvin.cararenaa.adapters;
 
-import com.marvin.cararena.models.Carzarena;
-import com.marvin.cararena.ui.CararenaDetailFragment;
+import com.marvin.cararenaa.models.Carzarena;
+import com.marvin.cararenaa.ui.CararenaDetailFragment;
 
 import java.util.ArrayList;
 

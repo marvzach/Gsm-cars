@@ -1,6 +1,6 @@
-package com.marvin.cararena.services;
-import com.marvin.cararena.Constants;
-import com.marvin.cararena.models.Carzarena;
+package com.marvin.cararenaa.services;
+import com.marvin.cararenaa.Constants;
+import com.marvin.cararenaa.models.Carzarena;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,7 +52,7 @@ public class MarketCheckService {
 
                     String body_type = cararenaJSON.getJSONObject("build").getString("body_type");
                     String vehicle_type = cararenaJSON.getJSONObject("build").getString("vehicle_type");
-                    String engine = cararenaJSON.getJSONObject("build").getString("engine");
+                    String engine = cararenaJSON.getJSONObject("build").getString("vehicle_type");
                     String made_in = cararenaJSON.getJSONObject("build").getString("made_in");
 
                     String latitude = cararenaJSON.getJSONObject("dealer").getString("latitude");
@@ -64,7 +64,7 @@ public class MarketCheckService {
                     }
 
                     Carzarena carzarena = new Carzarena(make, model, website, year,
-                            photo_links,body_type,vehicle_type,engine, made_in ,details, latitude, longitude);
+                            photo_links,body_type,vehicle_type, engine, made_in ,details, latitude, longitude);
                     carzarenas.add(carzarena);
                 }
             }
