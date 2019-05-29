@@ -3,6 +3,7 @@
     <words>
       <w>authmodel</w>
       <w>authsave</w>
+      <w>cararena</w>
       <w>carfound</w>
       <w>carzarena</w>
       <w>carzarenas</w>
@@ -11,6 +12,7 @@
       <w>lamboghini</w>
       <w>marketcheck</w>
       <w>recyclerview</w>
+      <w>savedcars</w>
     </words>
   </dictionary>
 </component>

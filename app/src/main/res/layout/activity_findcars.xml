@@ -51,15 +51,30 @@
         android:textColor="#ffff"
         android:textColorHint="#FF6D00"
         android:textSize="30sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Saved Cars"
+        android:layout_marginTop="400dp"
+        android:id="@+id/savedcarsButton"
+        android:background="#FF6D00"
+        android:fontFamily="@font/black_ops_one"
+        android:textColor="#fff"
+        android:visibility="visible"
+ />
 
     <Button
         android:id="@+id/findbutton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+
         android:background="#FF6D00"
         android:fontFamily="@font/black_ops_one"
+        android:layout_above="@+id/savedcarsButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
 
         android:text="Search for Cars"
         android:textColor="#fff" />
@@ -72,6 +87,8 @@
         android:inputType="textPersonName"
         android:text="dIGsvGbDwyF95th3c9NicTGXSnaOM8sG"
         android:visibility="invisible" />
+
+
 
 
 

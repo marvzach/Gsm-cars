@@ -50,6 +50,7 @@
         </activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ProfileActivity" />
+        <activity android:name=".SavedCarDetailsActivity" />
         <activity android:name=".ui.CararenaListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
