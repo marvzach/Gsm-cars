@@ -51,17 +51,18 @@
         android:textColor="#ffff"
         android:textColorHint="#FF6D00"
         android:textSize="30sp" />
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="My Saved Cars"
-        android:layout_marginTop="280dp"
         android:id="@+id/savedcarsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="80dp"
         android:background="#FF6D00"
         android:fontFamily="@font/black_ops_one"
+        android:text="View Saved Cars"
         android:textColor="#fff"
-        android:visibility="visible"
- />
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/findbutton"

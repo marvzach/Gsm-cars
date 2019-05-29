@@ -178,16 +178,7 @@
                 android:textSize="15sp" />
 
 
-            <!--<Button-->
-                <!--android:id="@+id/savecarButton"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_alignParentBottom="true"-->
-                <!--android:background="#F6F7F8"-->
-                <!--android:fontFamily="@font/black_ops_one"-->
-                <!--android:text="Save Car"-->
-                <!--android:textColor="#0F0F0F"-->
-                <!--android:textSize="15sp" />-->
+
         </RelativeLayout>
     </LinearLayout>
 </FrameLayout>
