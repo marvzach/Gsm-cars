@@ -71,12 +71,21 @@
         android:text="Save"
         android:textAllCaps="false" />
 
+
+
+
+
     <Button
         android:id="@+id/another"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="View Find Car page" />
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button_solid"
+        android:fontFamily="@font/black_ops_one"
+        android:text="View Find Car page"
+        android:layout_marginTop="50dp"
+        android:textColor="#0F0F0F"
+        android:textSize="15sp" />
 
 
 </LinearLayout>
