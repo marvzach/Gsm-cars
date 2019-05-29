@@ -22,7 +22,7 @@ public class Carzarena {
     String mLongitude;
 
 
-    private String pushId;
+    public String pushId;
 
     public Carzarena() {
 
