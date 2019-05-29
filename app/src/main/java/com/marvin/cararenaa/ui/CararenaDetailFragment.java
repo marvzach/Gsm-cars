@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.marvin.cararenaa.Authsave;
+import com.marvin.cararenaa.Constants;
 import com.marvin.cararenaa.R;
 import com.marvin.cararenaa.models.Carzarena;
 import com.squareup.picasso.Picasso;
@@ -84,6 +85,11 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
         mVH.setText("The Vehicle type is  :" +mCarzarena.getVehicle_type() );
         mAddressLabel.setText(mCarzarena.getMade_in()+ "(" + mCarzarena.getLongitude() +"," + mCarzarena.getLatitude()+ ") is the Location made.");
 
+
+        mWebsiteLabel.setOnClickListener(this);
+        mAddressLabel.setOnClickListener(this);
+        mPhoneLabel.setOnClickListener(this);
+        mSaveCarButton.setOnClickListener(this);
         return view;
     }
     //implicit intents//
@@ -107,20 +113,27 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
                     Uri.parse("tel:" + mCarzarena.getPhone()));
             startActivity(mapIntent);
         }
+//        if (v == mSaveCarButton) {
+//            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//            String uid = user.getUid();
+//            DatabaseReference carRef = FirebaseDatabase
+//                    .getInstance()
+//                    .getReference(Constants.FIREBASE_FOUND_CARS)
+//                    .child(uid);
+//            DatabaseReference pushRef = carRef.push();
+//            String pushId = pushRef.getKey();
+//            mCarzarena.setPushId(pushId);
+//            pushRef.setValue(mCarzarena);
+//
+//            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
+//            mSaveCarButton.setVisibility(View.INVISIBLE);
+//        }
         if (v == mSaveCarButton) {
-            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            String uid = user.getUid();
-            DatabaseReference carRef = FirebaseDatabase
+            DatabaseReference carfoundRef = FirebaseDatabase
                     .getInstance()
-                    .getReference(Authsave.FIREBASE_FOUND_CARS)
-                    .child(uid);
-            DatabaseReference pushRef = carRef.push();
-            String pushId = pushRef.getKey();
-            mCarzarena.setPushId(pushId);
-            pushRef.setValue(mCarzarena);
-
+                    .getReference(Constants.FIREBASE_FOUND_CARS);
+            carfoundRef.push().setValue(mCarzarena);
             Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
-            mSaveCarButton.setVisibility(View.INVISIBLE);
         }
     }
 }

@@ -164,17 +164,33 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
-
             <Button
-                android:id="@+id/savecarButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:background="#F6F7F8"
-                android:fontFamily="@font/black_ops_one"
-                android:text="Save Car"
-                android:textColor="#0F0F0F"
-                android:textSize="15sp" />
+            android:id="@+id/savecarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:background="#F6F7F8"
+            android:fontFamily="@font/black_ops_one"
+            android:text="Save Car"
+            android:textColor="#0F0F0F"
+            android:saveEnabled="true"
+            android:textSize="15sp"/>
+
+
+            <!--<Button-->
+                <!--android:id="@+id/savecarButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="#F6F7F8"-->
+                <!--android:fontFamily="@font/black_ops_one"-->
+                <!--android:text="Save Car"-->
+                <!--android:textColor="#0F0F0F"-->
+                <!--android:textSize="15sp" />-->
         </RelativeLayout>
     </LinearLayout>
 </FrameLayout>
