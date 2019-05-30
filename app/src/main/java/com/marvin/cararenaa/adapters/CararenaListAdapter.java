@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -55,6 +56,7 @@ public class CararenaListAdapter extends RecyclerView.Adapter<CararenaListAdapte
         @BindView(R.id.carNameTextView) TextView mNameTextView;
         @BindView(R.id.categoryTextView) TextView mCategoryTextView;
         @BindView(R.id.priceTextView) TextView mRatingTextView;
+
         private Context mContext;
 
         public CararenaViewHolder(View itemView) {
