@@ -56,6 +56,14 @@ public class CararenaListAdapter extends RecyclerView.Adapter<CararenaListAdapte
         @BindView(R.id.carNameTextView) TextView mNameTextView;
         @BindView(R.id.categoryTextView) TextView mCategoryTextView;
         @BindView(R.id.priceTextView) TextView mRatingTextView;
+        @BindView(R.id.Body) TextView mBody;
+        @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
+        @BindView(R.id.Engine) TextView mEngine;
+
+
+
+
+
 
         private Context mContext;
 
@@ -66,13 +74,15 @@ public class CararenaListAdapter extends RecyclerView.Adapter<CararenaListAdapte
             itemView.setOnClickListener(this);
         }
 
-        public void bindRestaurant(Carzarena carzarena) {
-            Picasso.get().load(carzarena.getPhoto_links()).into(mCararenaImageView);
-            mNameTextView.setText(carzarena.getMake());
-            mNameTextView.setText(carzarena.getMake());
-            mCategoryTextView.setText(carzarena.getPhone());
-
-            mRatingTextView.setText("Year Made: " + carzarena.getPrice() );
+        public void bindRestaurant(Carzarena mCarzarenas) {
+            Picasso.get().load(mCarzarenas.getPhoto_links()).into(mCararenaImageView);
+            mNameTextView.setText(mCarzarenas.getMake());
+            mNameTextView.setText(mCarzarenas.getMake());
+            mCategoryTextView.setText(mCarzarenas.getPhone());
+            mBody.setText("Body type :" +mCarzarenas.getBody_type() );
+            mWebsiteLabel.setText("Website :" +mCarzarenas.getWebsite() );
+            mRatingTextView.setText("Year Made: " + mCarzarenas.getPrice() );
+            mEngine.setText("Engine :" +mCarzarenas.getEngine() );
         }
 
         @Override
