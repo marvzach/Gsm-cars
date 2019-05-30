@@ -8,19 +8,18 @@
     <ImageView
         android:id="@+id/buildImageView"
         android:layout_width="130dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:src="@drawable/logoo"
         android:visibility="visible" />
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:background="#ffffff"
         android:layout_height="match_parent"
-        android:padding="10dp">
-
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="15dp">
 
 
         <TextView
@@ -44,59 +43,50 @@
             android:text="One make Type"
             android:textStyle="italic" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
 
-            <TextView
-                android:id="@+id/priceTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="127dp"
-                android:layout_marginBottom="24dp"
-                android:fontFamily="@font/black_ops_one"
-                android:text="Year"
-                android:textColor="@color/colorAccent" />
+            android:fontFamily="@font/black_ops_one"
+            android:text="Year"
+            android:textColor="@color/colorAccent" />
 
-            <TextView
-                android:id="@+id/Body"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="70dp"
-                android:layout_marginRight="101dp"
-                android:layout_marginBottom="56dp"
-                android:fontFamily="@font/black_ops_one"
-                android:text="Body type"
-                android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
 
-            <TextView
-                android:id="@+id/Engine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="184dp"
-                android:layout_marginBottom="58dp"
-                android:fontFamily="@font/black_ops_one"
-                android:text="Engine"
-                android:textColor="@color/colorAccent" />
+            android:fontFamily="@font/black_ops_one"
+            android:text="Body type"
+            android:textColor="@color/colorAccent" />
 
-            <TextView
-                android:id="@+id/websiteTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="177dp"
-                android:layout_marginBottom="23dp"
-                android:fontFamily="@font/black_ops_one"
-                android:text="Website"
-                android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/Engine"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
 
-        </RelativeLayout>
+            android:fontFamily="@font/black_ops_one"
+            android:text="Engine"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/websiteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:fontFamily="@font/black_ops_one"
+            android:text="Website"
+            android:textColor="@color/colorAccent" />
+
+
     </LinearLayout>
 </LinearLayout>
