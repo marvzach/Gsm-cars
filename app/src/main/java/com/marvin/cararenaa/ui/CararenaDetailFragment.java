@@ -113,27 +113,13 @@ public class CararenaDetailFragment extends Fragment implements View.OnClickList
                     Uri.parse("tel:" + mCarzarena.getPhone()));
             startActivity(mapIntent);
         }
-//        if (v == mSaveCarButton) {
-//            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-//            String uid = user.getUid();
-//            DatabaseReference carRef = FirebaseDatabase
-//                    .getInstance()
-//                    .getReference(Constants.FIREBASE_FOUND_CARS)
-//                    .child(uid);
-//            DatabaseReference pushRef = carRef.push();
-//            String pushId = pushRef.getKey();
-//            mCarzarena.setPushId(pushId);
-//            pushRef.setValue(mCarzarena);
-//
-//            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
-//            mSaveCarButton.setVisibility(View.INVISIBLE);
-//        }
+
         if (v == mSaveCarButton) {
             DatabaseReference carfoundRef = FirebaseDatabase
                     .getInstance()
                     .getReference(Constants.FIREBASE_FOUND_CARS);
             carfoundRef.push().setValue(mCarzarena);
-            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Saved car Details", Toast.LENGTH_SHORT).show();
         }
     }
 }
