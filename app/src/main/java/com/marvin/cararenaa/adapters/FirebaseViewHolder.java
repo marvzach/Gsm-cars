@@ -38,7 +38,7 @@ public class FirebaseViewHolder extends RecyclerView.ViewHolder implements View.
         TextView nameTextView = (TextView) mView.findViewById(R.id.carNameTextView);
         TextView categoryTextView = (TextView) mView.findViewById(R.id.categoryTextView);
         TextView ratingTextView = (TextView) mView.findViewById(R.id.priceTextView);
-
+//
 //        Picasso.get().load(mCarzarena.getPhoto_links()).into(mImageLabel);
 
         nameTextView.setText(mCarzarena.getMake());
@@ -60,7 +60,7 @@ public class FirebaseViewHolder extends RecyclerView.ViewHolder implements View.
 
                 Intent intent = new Intent(mContext, CararenaDetailActivity.class);
                 intent.putExtra("position", itemPosition + "");
-                intent.putExtra("restaurants", Parcels.wrap(mCarzarena));
+                intent.putExtra("carzarenas", Parcels.wrap(mCarzarena));
 
                 mContext.startActivity(intent);
             }

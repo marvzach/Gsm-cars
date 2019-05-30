@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,7 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SavedCarDetailsActivity extends AppCompatActivity {
-    private DatabaseReference mRestaurantReference;
+    private DatabaseReference mCarsReference;
     private FirebaseRecyclerAdapter<Carzarena, FirebaseViewHolder> mFirebaseAdapter;
 
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
@@ -29,21 +30,21 @@ public class SavedCarDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_car);
+        setContentView(R.layout.savedcars);
         ButterKnife.bind(this);
 
-        mRestaurantReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_FOUND_CARS);
+        mCarsReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_FOUND_CARS);
         setUpFirebaseAdapter();
 }
     private void setUpFirebaseAdapter(){
         FirebaseRecyclerOptions<Carzarena> options =
                 new FirebaseRecyclerOptions.Builder<Carzarena>()
-                        .setQuery(mRestaurantReference, Carzarena.class)
+                        .setQuery(mCarsReference, Carzarena.class)
                         .build();
         mFirebaseAdapter = new FirebaseRecyclerAdapter<Carzarena, FirebaseViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull FirebaseViewHolder firebaseRestaurantViewHolder, int position, @NonNull Carzarena restaurant) {
-                firebaseRestaurantViewHolder.bindRestaurant(restaurant);
+            protected void onBindViewHolder(@NonNull FirebaseViewHolder firebaseCarzViewHolder, int position, @NonNull Carzarena cars) {
+                firebaseCarzViewHolder.bindRestaurant(cars);
             }
             @NonNull
             @Override
