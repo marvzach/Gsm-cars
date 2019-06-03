@@ -77,6 +77,7 @@ public class FirebaseCararenaListAdapter extends FirebaseRecyclerAdapter<Carzare
     protected void onBindViewHolder(@NonNull final FirebaseViewHolder firebaseViewHolder, int position, @NonNull Carzarena car) {
         firebaseViewHolder.bindRestaurant(car);
 
+
         firebaseViewHolder.mImageLabe.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
