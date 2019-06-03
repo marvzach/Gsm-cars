@@ -11,5 +11,10 @@
         android:title="View Saved cars"
         android:visible="true"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_editprofile"
+        android:title="Edit Profile"
+        android:visible="true"
+        app:showAsAction="never" />
 
 </menu>

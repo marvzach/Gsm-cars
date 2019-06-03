@@ -96,6 +96,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             viewsaved();
             return true;
         }
+        if(id == R.id.action_editprofile){
+            edittprofile();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -111,6 +116,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void viewsaved() {
 
         Intent intent = new Intent(MainActivity.this, SavedCarDetailsActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+
+    }
+    public void edittprofile() {
+
+        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
