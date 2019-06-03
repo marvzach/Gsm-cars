@@ -35,6 +35,7 @@ public class FirebaseCararenaListAdapter extends FirebaseRecyclerAdapter<Carzare
     private ChildEventListener mChildEventListener;
     private ArrayList<Carzarena> mCarzarena = new ArrayList<>();
 
+
     public FirebaseCararenaListAdapter(FirebaseRecyclerOptions<Carzarena> options,
                                        Query ref,
                                        OnStartDragListener onStartDragListener,
