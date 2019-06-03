@@ -8,14 +8,12 @@ android:orientation="horizontal">
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-
     <ImageView
         android:id="@+id/carrImageView"
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
         android:src="@drawable/w" />
-
     <ImageView
         android:id="@+id/dragIcon"
         android:layout_width="30dp"
