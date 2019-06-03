@@ -52,6 +52,7 @@ public class FirebaseViewHolder extends RecyclerView.ViewHolder implements ItemT
                 R.animator.drag_scale_on);
         set.setTarget(itemView);
         set.start();
+
     }
 
     @Override
