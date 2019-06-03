@@ -75,6 +75,7 @@ public class ProfileActivity extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
         textView = (TextView) findViewById(R.id.textViewVerified);
 
+
         AnotherMove = findViewById(R.id.another);
         AnotherMove .setOnClickListener(new View.OnClickListener() {
             @Override
