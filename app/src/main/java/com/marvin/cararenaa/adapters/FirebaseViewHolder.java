@@ -48,6 +48,7 @@ public class FirebaseViewHolder extends RecyclerView.ViewHolder implements ItemT
 
     @Override
     public void onItemSelected() {
+
         AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(mContext,
                 R.animator.drag_scale_on);
         set.setTarget(itemView);
