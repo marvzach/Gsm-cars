@@ -27,7 +27,6 @@ public class SplashScreen extends Activity {
                     }
                 },2500);
 
-        MediaPlayer mediaPlayer= MediaPlayer.create(SplashScreen.this, R.raw.burnout);
-        mediaPlayer.start();
+        
     }
 }
